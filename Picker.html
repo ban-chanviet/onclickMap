@@ -79,14 +79,13 @@
                     longLatArray.forEach(element => {
                         textArr.push('[' + element + ']')
                     })
-                    copy('[' + textArr.toString() + ']')
+                    copy('[' + textArr.reverse().toString() + ']')
                     console.log('[' + textArr.toString() + ']')
                     longLatArray = []
                     textArr = []
                 }
                 if (isBackslash) {
                     longLatArray.pop()
-
                 }
             };
             document.getElementById("line-button").onclick = () => {
